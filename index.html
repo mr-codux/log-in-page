@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log in Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="48" height="48" fill="#2AABBB"/>
+        <line x1="4" y1="4" x2="44" y2="44" stroke="white" stroke-width="3"/>
+        <line x1="44" y1="4" x2="4" y2="44" stroke="white" stroke-width="3"/>
+      </svg>
+    </div>
+    <nav class="navbar__links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Resources</a>
+      <a href="#">Pricing</a>
+    </nav>
+    <div class="navbar__actions">
+      <a href="#" class="btn-login">Log In</a>
+      <a href="#" class="btn-signup">Sign up</a>
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Resources</a>
+    <a href="#">Pricing</a>
+    <a href="#" class="btn-login">Log In</a>
+    <a href="#" class="btn-signup">Sign up</a>
+  </div>
+
+  <!-- Main Login Section -->
+  <main class="main">
+    <div class="login-card">
+
+      <!-- Logo Icon -->
+      <div class="login-card__logo">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="56" height="56" fill="#2AABBB"/>
+          <line x1="6" y1="6" x2="50" y2="50" stroke="white" stroke-width="3.5"/>
+          <line x1="50" y1="6" x2="6" y2="50" stroke="white" stroke-width="3.5"/>
+        </svg>
+      </div>
+
+      <h1 class="login-card__title">Log in to Your Account</h1>
+      <p class="login-card__subtitle">Welcome back! Please enter your details.</p>
+
+      <form class="login-form" novalidate>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email..."
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password..."
+            autocomplete="current-password"
+          />
+        </div>
+
+        <button type="submit" class="btn-signin">Sign In</button>
+
+        <!-- <div class="divider">
+          <span></span>
+          <span></span>
+        </div> -->
+
+        <button type="button" class="btn-google">
+          <!-- Google "G" SVG Icon -->
+          <svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#EA4335" d="M24 9.5c3.14 0 5.95 1.08 8.17 2.86l6.08-6.08C34.46 3.1 29.5 1 24 1 14.82 1 7.07 6.48 3.68 14.18l7.08 5.5C12.43 13.38 17.74 9.5 24 9.5z"/>
+            <path fill="#4285F4" d="M46.1 24.5c0-1.6-.14-3.13-.4-4.6H24v8.7h12.42c-.54 2.9-2.18 5.36-4.64 7.02l7.18 5.58C43.18 37.1 46.1 31.3 46.1 24.5z"/>
+            <path fill="#FBBC05" d="M10.76 28.32A14.56 14.56 0 0 1 9.5 24c0-1.5.26-2.96.7-4.32l-7.08-5.5A23.93 23.93 0 0 0 0 24c0 3.88.93 7.54 2.58 10.78l8.18-6.46z"/>
+            <path fill="#34A853" d="M24 47c5.48 0 10.08-1.82 13.44-4.94l-7.18-5.58c-1.98 1.34-4.5 2.12-7.26 2.12-6.26 0-11.57-3.88-13.24-9.28l-8.18 6.46C7.07 41.52 14.82 47 24 47z"/>
+            <path fill="none" d="M0 0h48v48H0z"/>
+          </svg>
+          Sign In With Google
+        </button>
+
+      </form>
+
+      <p class="login-card__register">
+        Don't Have an Account? <a href="#">Sign Up</a>
+      </p>
+      <p class="login-card__forgot">
+        Having trouble logging in? <a href="#">Set up a new Password</a>
+      </p>
+
+    </div>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

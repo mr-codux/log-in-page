@@ -1,6 +1,6 @@
 # 🌐 Project Name : LOGIN page
 
-designed a log-in page from figma to html, updated via tailwindcss 
+designed a log-in page from figma to html, fully responsive via manual HTML
 
 [Live Demo Link](https://mr-codux.github.io/log-in-page/)
 

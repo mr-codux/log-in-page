@@ -7,14 +7,13 @@ designed a log-in page from figma to html, fully responsive via manual HTML
 ## ✨ Features
 
 * **Feature 1:** fully responsive login page
-* **Feature 2:** responsive via tailwindcss.
+* **Feature 2:** responsive via MANUAL html.
 * **Responsive Design:** Works flawlessly on desktop, tablet, and mobile screens.
 
 ## 🛠️ Built With
 
 * **HTML5:** Semantic structural markup.
 * **CSS3:** Custom layout design and styling.
-* **TAILWINDCSS:** uses tailwindcss
 * **JavaScript (Optional):** Interactive client-side elements.
 
 ## 🚀 Getting Started

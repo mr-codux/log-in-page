@@ -2,7 +2,7 @@
 
 designed a log-in page from figma to html, updated via tailwindcss 
 
-[Live Demo Link](https://github.io)
+[Live Demo Link](https://mr-codux.github.io/log-in-page/)
 
 ## ✨ Features
 
